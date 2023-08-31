@@ -1,0 +1,29 @@
+{
+    "name": "azim/broadcaster",
+    "description": "add terminate function to broadcasting lib",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nima Aziminejad",
+            "email": "nima.aziminezhad@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Azim\\Broadcaster\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Azim\\Broadcaster\\Providers\\BroadcasterServiceProvider"
+            ],
+            "aliases": {
+                "CustomBroadcast": "Azim\\Broadcaster\\Facades\\CustomBroadcast"
+            }
+        }
+    }
+}
